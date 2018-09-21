@@ -13,5 +13,6 @@ HSE programming 2 year
 2|?|код
 3|?|код
 
+![alt text](https://pp.userapi.com/c850124/v850124300/21696/pY5JXCrqCkU.jpg)
 
 *by* Sigdel Elina
