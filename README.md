@@ -10,7 +10,7 @@ HSE programming 2 year
 №|Описание|Ссылка на работу
 ---|:---:|:---:
 1|Игра "Виселица"|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork1)*
-2|?|код
+2|Пользователи Гитхаб|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork2)*
 3|?|код
 
 ![alt text](https://pp.userapi.com/c850124/v850124300/21696/pY5JXCrqCkU.jpg)
