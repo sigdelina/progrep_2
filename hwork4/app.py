@@ -69,7 +69,7 @@ def jsonel():
 @app.route('/search')  # поиск
 def searching():
     search_list = []
-    search_str = ''
+    serc_st = ''
     urls = {'Главная страница с опросом': url_for('general'),
             'Все ответы в формате json': url_for('jsonel'),
             'Статистика': url_for('stat'),
@@ -88,10 +88,10 @@ def searching():
                 search_list.append(d)
         # выводм информацию
         with open("search.txt", 'w', encoding='utf-8') as f:
-            for ele in search_list:
-                if word in str(ele) and studying in str(ele):
-                    search_str += str(ele).replace('{', '').replace('}', '') + "\n"
-            f.write(search_str)
+            for el in search_list:
+                if word in str(el) and studying in str(el):
+                    serc_st += str(el).replace('{', '').replace('}', '') + "\n"
+            f.write(serc_st)
         return render_template('resulting.html', studying=studying,
                                word=word, urls=urls)
     return render_template('items search.html', urls=urls)
