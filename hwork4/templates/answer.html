@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inforamtoin</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1 {
+        background-color: #1abc9c;
+        color:#555555;
+    }
+    .bg-2 {
+        background-color: #fff; /* Dark Blue */
+        color: #555555;
+    }
+    .bg-3 {
+        background-color: #555555; /* White */
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+<div class="col-sm-9">
+    <div class="container-fluid bg-1 text-center">
+    <h1>Спасибо за учатсие в опросе!</h1>
+    </div>
+    <div class="container-fluid bg-3 text-center">
+    <h2>Ваши ответы:</h2>
+    <p>Ваше имя: {{ name }}</p>
+    <p>Ваш возраст: {{ age }}</p>
+    <p>Ваш родной язык: {{ lang }}</p>
+    <p>Ваш родной город: {{ city }}</p>
+    <p>Ваш пол: {{ gender }}</p>
+    <p>Ваш уровень полученного образования: {{ study }}</p>
+    </div>
+    <div class="container-fluid bg-2 text-center">
+    <p>Ваш ответ на 1 вопрос: {{ quest_1 }}</p>
+    <p>Ваш ответ на 2 вопрос: {{ quest_2 }}</p>
+    <p>Ваш ответ на 3 вопрос: {{ quest_3 }}</p>
+    </div>
+</div>
+<div class="container-fluid">
+<div class="row content">
+<div class="col-sm-3 sidenav">
+    <h3>Также вы можете посмотреть статистику ответов и инофрмацию всех ответов в json</h3>
+<ul>
+    {% for name, url in urls.items() %}
+    <li><a href="{{ url }}">{{ name }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>
+

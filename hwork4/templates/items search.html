@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+        <title>Items search</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1 {
+        background-color: #1abc9c;
+        color:#555555;
+    }
+    .bg-2 {
+        background-color: #fff;
+        color: #555555;
+    }
+    .bg-3 {
+        background-color: #555555;
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+<div class="col-sm-9">
+    <div class="container-fluid bg-1 text-center">
+        <h2>Поиск</h2></div>
+    <form>
+        <div class="container-fluid bg-2 text-left">
+            <h4>Поиск осуществляется по двум параметрам:</h4>
+            <ul>
+                <li>Уровеню образования участников</li>
+                <li>И непосредственно одного из слов в любой родовой форме</li>
+            </ul>
+            <p>Такой поиск релевантен за счет того, что гипотеза исследователей заключается в том, чтобы
+            понять, как ОДНОГО слово из предложенный коррелирует с уровнем образования людей.
+            Слова кед/кроссовка/тапка не связаны между собой, они взяты для опроса потому, что родовая
+            принадлженость обуви всегда вызывала затруднение.</p>
+            <p>Выбирете параметры для поиска по ответам участников опроса</p></div>
+    <div class="container-fluid bg-3 text-center">
+        <label><h4>Cлово: </h4><br>
+        <input type="radio" name="word" value="кед: м.р." required> Кед<br>
+        <input type="radio" name="word" value="кеда: ж.р." required> Кеда<br>
+         <input type="radio" name="word" value="кроссовок: м.р." required> Кроссовок<br>
+        <input type="radio" name="word" value="кроссовка: ж.р." required> Кроссовка<br>
+        <input type="radio" name="word" value="тапок: м.р." required> Тапок<br>
+        <input type="radio" name="word" value="тапка: ж.р." required> Тапка</label><br>
+    </div>
+    <div class="container-fluid bg-2 text-center">
+        <label><h4>Уровень образование отвечающего:</h4><br>
+        <input type="radio" name="studying" value="без высшего" required> Высшее образование отсутствует<br>
+        <input type="radio" name="studying" value="с высшим" required> Высшее</label><br>
+    <input type="submit" value="Отправить">
+    </div></form>
+    </div>
+</div>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+    <h3>Вы можете перейти по ссылкам</h3>
+    <ul>
+    {% for name, url in urls.items() %}
+    <li><a href="{{ url }}">{{ name }}</a></li>
+    {% endfor %}
+    </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

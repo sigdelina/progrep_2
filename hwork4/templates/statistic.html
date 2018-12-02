@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Statistics</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1 {
+        background-color: #1abc9c;
+        color:#555555;
+    }
+    .bg-2 {
+        background-color: #fff;
+        color: #555555;
+    }
+    .bg-3 {
+        background-color: #555555;
+        color: #ffffff;
+    }
+    table {
+            border: solid 1px #555555;
+            border-collapse: collapse;
+            width: 1010px;
+            height: 40px;
+        }
+
+        td, th {
+            border: solid 1px #555555;
+        }
+    </style>
+</head>
+<body>
+<div class="col-sm-9">
+    <div class="container-fluid bg-1 text-center">
+        <h2>Здесь предсталвна статистика на основе полученных от пользователей данных</h2></div>
+    <div class="container-fluid bg-3 text-center">
+        <p>Сами параметры не зависят друг от друга, они просто показывют какие ответы дали люди на вопросы</p></div>
+    <div class="container-fluid bg-2 text-center">
+    <table>
+    <tr>
+      <th colspan="7" align="center">Абсолютное значение ответов в зависимотси от параметров</th>
+    </tr>
+    <tr>
+      <th> </th>
+      <th colspan="2" align="center">Кеды</th>
+      <th colspan="2" align="center">Кроссовоки</th>
+        <th colspan="2" align="center">Тапки</th>
+    </tr>
+    <tr>
+      <td rowspan="2" align="center">Формы</td>
+        <td align="center">верная форма</td>
+        <td align="center">неверная форма</td>
+        <td align="center">верная форма</td>
+        <td align="center">неверная форма</td>
+        <td align="center">верная форма</td>
+        <td align="center">неверная форма</td>
+    </tr>
+    <tr>
+        <td align="center">кед</td>
+        <td align="center">кеда</td>
+        <td align="center">кроссовка</td>
+        <td align="center">кроссовок</td>
+        <td align="center">тапка</td>
+        <td align="center">тапок</td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td colspan="6" align="center">В зависимотси от родного языка</td>
+    </tr>
+    <tr>
+        <td align="center">Русский</td>
+        <td align="center">{{ rus_km }} </td>
+        <td align="center">{{ rus_kf }} </td>
+        <td align="center">{{ rus_krf }}</td>
+        <td align="center">{{ rus_krm }} </td>
+        <td align="center">{{ rus_tf }}</td>
+        <td align="center">{{ rus_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">Не русский</td>
+        <td align="center">{{ nrus_km }}</td>
+        <td align="center">{{ nrus_kf }} </td>
+        <td align="center">{{ nrus_krf }} </td>
+        <td align="center">{{ nrus_krm }}</td>
+        <td align="center">{{ nrus_tf }}</td>
+        <td align="center">{{ nrus_tm }}</td>
+    </tr>
+     <tr>
+        <td> </td>
+        <td colspan="6" align="center">В зависимотси от родного города</td>
+    </tr>
+    <tr>
+        <td align="center">Москва и МО</td>
+        <td align="center">{{ m_km }}</td>
+        <td align="center">{{ m_kf }}</td>
+        <td align="center">{{ m_krf  }}</td>
+        <td align="center">{{ m_krm }} </td>
+        <td align="center">{{ m_tf }}</td>
+        <td align="center">{{ m_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">Не Москва и МО</td>
+        <td align="center">{{ nm_km }}</td>
+        <td align="center">{{ nm_kf }}</td>
+        <td align="center">{{ nm_krf }}</td>
+        <td align="center">{{ nm_krm }}</td>
+        <td align="center">{{ nm_tf }}</td>
+        <td align="center">{{ nm_tm }}</td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td colspan="6" align="center">В зависимотси от возраста</td>
+    </tr>
+    <tr>
+        <td align="center">Младше 18</td>
+        <td align="center">{{ l18_km }}</td>
+        <td align="center">{{ le18_kf }}</td>
+        <td align="center">{{ le18_krf }}</td>
+        <td align="center">{{ le18_krm }}</td>
+        <td align="center">{{ le18_tf }}</td>
+        <td align="center">{{ le18_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">От 19 до 30</td>
+        <td align="center">{{ from18_km }}</td>
+        <td align="center">{{ from18_kf }}</td>
+        <td align="center">{{ from18_krf }}</td>
+        <td align="center">{{ from18_krm }}</td>
+        <td align="center">{{ from18_tf }}</td>
+        <td align="center">{{ from18_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">От 31 до 50</td>
+        <td align="center">{{ from30_km }}</td>
+        <td align="center">{{ from30_kf }}</td>
+        <td align="center">{{ from30_krf }}</td>
+        <td align="center">{{ from30_krm }}</td>
+        <td align="center">{{ from30_tf }}</td>
+        <td align="center">{{ from30_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">51 +</td>
+        <td align="center">{{ fr50_km }}</td>
+        <td align="center">{{ fr50_kf }}</td>
+        <td align="center">{{ fr50_krf }}</td>
+        <td align="center">{{ fr50_krm }}</td>
+        <td align="center">{{ fr50_tf }}</td>
+        <td align="center">{{ fr50_tm }}</td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td colspan="6" align="center">В зависимотси от пола</td>
+    </tr>
+    <tr>
+        <td align="center">Женский</td>
+        <td align="center">{{ fe_km }}</td>
+        <td align="center">{{ fe_kf }} </td>
+        <td align="center">{{ fe_krf }} </td>
+        <td align="center">{{ fe_krm }}</td>
+        <td align="center">{{ fe_tf }}</td>
+        <td align="center">{{ fe_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center">Мужской</td>
+        <td align="center">{{ male_km }}</td>
+        <td align="center">{{ male_kf }}</td>
+        <td align="center">{{ male_krf }}</td>
+        <td align="center">{{ male_krm }}</td>
+        <td align="center">{{ male_tf }}</td>
+        <td align="center">{{ male_tm }}</td>
+    </tr>
+    <tr>
+        <td> </td>
+        <td colspan="6" align="center">В зависимотси от уровня образования</td>
+    </tr>
+    <tr>
+        <td align="center">Без высшего образования</td>
+        <td align="center">{{ low_km }}</td>
+        <td align="center">{{ low_kf }}</td>
+        <td align="center">{{ low_krf }}</td>
+        <td align="center">{{ low_krm }}</td>
+        <td align="center">{{ low_tf }}</td>
+        <td align="center">{{ low_tm }}</td>
+    </tr>
+    <tr>
+        <td align="center"> С высшим образованием</td>
+        <td align="center">{{ high_km }}</td>
+        <td align="center">{{ high_kf }}</td>
+        <td align="center">{{ high_krf }}</td>
+        <td align="center">{{ high_krm }}</td>
+        <td align="center">{{ high_tf }}</td>
+        <td align="center">{{ high_tm }}</td>
+    </tr>
+</table>
+        </div>
+</div>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+<h3>Вы можете перейти по ссылкам</h3>
+<ul>
+    {% for name, url in urls.items() %}
+    <li><a href="{{ url }}">{{ name }}</a></li>
+    {% endfor %}
+</ul>
+</div>
+</div>
+</div>
+</body>
+</html>

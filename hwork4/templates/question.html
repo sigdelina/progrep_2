@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .bg-1 {
+      background-color: #1abc9c;
+      color:#555555;
+  }
+  .bg-2 {
+      background-color: #fff;
+      color: #555555;
+  }
+  .bg-3 {
+      background-color: #555555;
+      color: #ffffff;
+  }
+  </style>
+</head>
+<body>
+
+<div class="container-fluid bg-1 text-center">
+ <h1>Лингвистический опрос</h1></div>
+<div class="container-fluid bg-2 text-center">
+<form>
+    <label>Имя (Ник) <input type="text" name="name" required> </label><br>
+    <label>Возраст :
+    <input type="radio" name="age" value="меньше 18" required> младше 18
+    <input type="radio" name="age" value="от 19 до 30" required> 19-30
+        <input type="radio" name="age" value="от 31 до 50" required> 31-50
+    <input type="radio" name="age" value="больше 51" required> cтарше 51</label><br>
+    <label>Родной язык:
+    <input type="radio" name="lang" value="русский" required> русский
+    <input type="radio" name="lang" value="не русский" required> другой </label><br>
+    <label>Родной город:
+    <input type="radio" name="city" value="Москва и МО" required> Москва и МО
+    <input type="radio" name="city" value="Не Москва и МО" required> другой </label><br>
+    <label>Пол :
+    <input type="radio" name="gender" value="женский" required> Жeнcкий
+        <input type="radio" name="gender" value="мужской" required> Myжcкoй</label><br>
+    <label>Уровень законченного образования:<br>
+    <input type="radio" name="study" value="без высшего" required> Высшее образование отсутствует<br>
+    <input type="radio" name="study" value="с высшим" required> Высшее</label><br>
+    </div>
+    <div class="container-fluid bg-3 text-center">
+    <h3>Теперь Вам предлагается ответить несколько небольших вопросов</h3>
+    <label>Вопрос 1. Выберите предложение, которое кажется Вам приавильными.<br>
+        <input type="radio" name="quest_1" value="кед: м.р." required> Не могу найти кед.<br>
+        <input type="radio" name="quest_1" value="кеда: ж.р." required> Не могу найти кеду.</label><br>
+    <label>Вопрос 2. Выберите предложение, которое кажется Вам приавильными.<br>
+         <input type="radio" name="quest_2" value="кроссовок: м.р." required> Я тоже не могу найти свой кроссовок!<br>
+        <input type="radio" name="quest_2" value="кроссовка: ж.р." required> Я тоже не могу найти свою кроссовку!</label><br>
+    <label>Вопрос 3. Выберите предложение, которое кажется Вам приавильными.<br>
+        <input type="radio" name="quest_3" value="тапок: м.р." required> У меня даже нормальной домашней обуви нет, потому что кот погрыз мой тапок<br>
+        <input type="radio" name="quest_3" value="тапка: ж.р." required> У меня даже нормальной домашней обуви нет, потому что кот погрыз мою тапку</label><br>
+    <input type="submit" value="Отправить">
+</form>
+</div>
+
+</body>
+</html>
+

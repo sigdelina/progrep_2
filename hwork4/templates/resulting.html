@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Your search</title>
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+    .bg-1 {
+        background-color: #1abc9c;
+        color:#555555;
+    }
+    .bg-3 {
+        background-color: #555555;
+        color: #ffffff;
+    }
+    </style>
+</head>
+<body>
+<div class="col-sm-9">
+    <div class="container-fluid bg-1 text-center">
+        <h2>Ваши ответы:</h2>
+    </div>
+    <div class="container-fluid bg-3 text-center">
+        <p>Выбранное слово: {{ word }}</p>
+        <p>Выбраный уровень образования: {{ studying }}</p>
+    </div>
+</div>
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+    <h3>Вы можете перейти по ссылкам</h3>
+<ul>
+    {% for name, url in urls.items() %}
+    <li><a href="{{ url }}">{{ name }}</a></li>
+    {% endfor %}
+</ul>
+        </div>
+  </div>
+</div>
+</body>
+</html>
