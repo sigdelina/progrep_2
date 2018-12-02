@@ -97,7 +97,7 @@ def searching():
     return render_template('items search.html', urls=urls)
 
 
-@app.route('/result')  # создаем страницу с результатами поиска
+@app.route('/results')  # создаем страницу с результатами поиска
 def resultin():
     files = []
     urls = {'Главная страница с опросом': url_for('general'),
