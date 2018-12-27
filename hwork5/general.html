@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Main page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .jumbotron {
+      background-color: #6666ff;
+      color: #fff;
+      padding: 100px 25px;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #6666ff;
+      font-size: 50px;
+  }
+  .logo {
+      color: #6666ff;
+      font-size: 200px;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<div class="jumbotron text-center">
+  <h1>Найдется все</h1>
+  <p>в маленьком корпусе текстов местной газеты</p>
+  <form class="form-inline">
+    <div class="input-group">
+      <input type="text" class="form-control" name="search" size="50" placeholder="поиск" required>
+      <div class="input-group-btn">
+        <button type="submit" class="btn btn-danger">Найти</button>
+      </div>
+    </div>
+  </form>
+</div>
+
+<div class="container-fluid">
+  <div class="row">
+      <div class="col-md-2">
+      </div>
+    <div class="col-md-4">
+      <h2>О веб-сервисе</h2>
+      <h4>Веб-сервис направлен на поиск информации на сайте газеты города Волжска</h4>
+      <p>Корпус газетных текстов состоит из статей, опубликованных за 2018 год</p>
+     <input type="button" class="btn btn-info" value="Перейти на сайт" onclick="location.href = 'http://gazeta-vp.ru/';">
+    </div>
+      <div class="col-md-2">
+      </div>
+    <div class="col-md-2">
+      <span class="glyphicon glyphicon-signal logo"></span>
+    </div>
+      <div class="col-md-2">
+      </div>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="container-fluid bg-grey">
+  <div class="row">
+      <div class="col-md-2">
+      </div>
+    <div class="col-md-2">
+      <span class="glyphicon glyphicon-globe logo"></span>
+    </div>
+      <div class="col-md-2">
+      </div>
+    <div class="col-md-4">
+      <h2>Возможности</h2>
+      <h4><strong>Цель:</strong> Сделать региональные газеты доступнее</h4>
+      <p><strong>Результат:</strong> Легкий поиск информации в Волжске</p><br>
+        <p>Мы стремимся к тому, чтобы региональные газеты развивались так же, как развиваются информационные ресурсы крупных городов.
+        Основной миссией сервиса является поиск по ресурсам, которые предлагает одна из газет России.
+        </p>
+    </div>
+      <div class="col-md-2">
+      </div>
+  </div>
+</div>
+
+
+<!-- Container (Services Section) -->
+<div class="container-fluid text-center">
+  <h2>На сайте</h2>
+  <h4>Вы найдете</h4>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-off logo-small"></span>
+      <h4>Работа</h4>
+      <p>ющего над кодом ленгивста</p>
+    </div>
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-heart logo-small"></span>
+      <h4>Любовь</h4>
+      <p>с которой был сделан веб-сервис</p>
+    </div>
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-certificate logo-small"></span>
+      <h4>Новсти</h4>
+      <p>которые Вас удивят</p>
+    </div>
+    <div class="col-sm-3">
+      <span class="glyphicon glyphicon-wrench logo-small"></span>
+      <h4 style="color:#303030;">Перегрузки</h4>
+      <p>Сервису может быть тяжело от новостей</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
