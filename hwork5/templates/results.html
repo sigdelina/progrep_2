@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Results</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar-inverse {
+      background-color: #6666ff;
+      color: #fff;
+      padding: 15px 25px;
+  }
+  .container-fluid {
+      padding: 30px 50px;
+  }
+  .bg-grey {
+      background-color: #6666ff;
+  }
+  .sidenav {
+      background-color: #f6f6f6;
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+  }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-3 text-center">
+      <h4>Волжская правда</h4>
+    </div>
+      <div class="col-sm-1 text-center">
+      <h4></h4>
+    </div>
+    <div class="col-sm-8">
+    <form class="form-inline">
+        <div class="input-group">
+          <input type="text" class="form-control" name="search" size="50" placeholder="поиск" required>
+      <div class="input-group-btn">
+      <button type="submit" class="btn btn-danger">Найти</button>
+      </div>
+      </div>
+    </form>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid text-center">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+        <h4>О веб-сервисе</h4>
+      <h5>Веб-сервис направлен на поиск информации на сайте газеты города Волжска</h5>
+      <p>Корпус газетных текстов состоит из статей, опубликованных за 2018 год</p>
+     <input type="button" class="btn btn-info" value="Перейти на сайт" onclick="location.href = 'http://gazeta-vp.ru/';"><hr>
+        <p></p>
+        <h4>Возможности</h4>
+      <h5><strong>Цель:</strong> Сделать региональные газеты доступнее</h5>
+      <p><strong>Результат:</strong> Легкий поиск информации в Волжске</p>
+        <p>Мы стремимся к тому, чтобы региональные газеты развивались так же, как развиваются информационные ресурсы крупных городов.
+        Основной миссией сервиса является поиск по ресурсам, которые предлагает одна из газет России.
+        </p>
+    </div>
+  <div class="col-sm-1">
+      <p></p>
+  </div>
+    <div class="col-sm-7 text-left">
+        <h3>Результаты поиска по запросу « {{ search }}»</h3>
+      <hr>
+        {% for i in result_cort %}
+            <li><a href="{{ i[0] }}">{{ i[1] }}</a><br>
+                {{ i[2] }}</li>
+        {% endfor %}
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <p>Footer Text</p>
+</footer>
+
+</body>
+</html>
+
