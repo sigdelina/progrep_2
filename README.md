@@ -6,8 +6,6 @@ HSE programming 2 year
 Домашние задания того года лежат *[здесь](https://github.com/smilina702/progrep)*
 
 
-## Не верьте тому, что написано около hwork3 - я обновляла README.md, там очень важная инфомарция о возможных проблемах, поэтому очень прошу прочитать и воспользователься второй ссылкой на диск (для блага и удобства). 
-
 
 Задания этого года в таблице ниже
 
@@ -15,7 +13,11 @@ HSE programming 2 year
 ---|:---:|:---:
 1|Игра "Виселица"|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork1)*
 2|Пользователи Гитхаб|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork2)*
-3|?|код
+3|Газетный корпус|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork3)*
+4|Сайт-анкета|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork4)*
+5|Поисковик для газетного коруса|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork5)*
+6|VK API|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork6)*
+7|Word2vec и графы|*[код](https://github.com/smilina702/progrep_2/tree/master/hwork7)*
 
 ![alt text](https://pp.userapi.com/c850124/v850124300/21696/pY5JXCrqCkU.jpg)
 
