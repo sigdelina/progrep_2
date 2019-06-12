@@ -346,4 +346,4 @@ def stat():
 
 
 if __name__ == '__main__':  # запускаем. ЮХУУУ!
-    app.run()
+    app.run(debug=True)
